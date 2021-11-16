@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after {
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,34 +31,33 @@
 }
 
 
-html {
+
+
+
+html{
     scroll-behavior: smooth;
 }
 
 /* ========================== this code for all page Open ==========================  */
-.pet-container {
-    width: 100%;
+.pet-container{
+   width: 100%;
     max-width: 1200px;
 
     margin-right: auto;
     margin-left: auto;
 }
-
-.pet-row {
+.pet-row{
     display: flex;
     flex-wrap: wrap;
 }
-
-.pet-4 {
+.pet-4{
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
-
-.pet-img {
+.pet-img{
     max-width: 100%;
     height: auto;
 }
-
 /* ========================== this code for all page Close  ==========================  */
 
 
@@ -70,39 +69,37 @@ html {
     position: relative;
 
     padding-bottom: 100px;
-    padding-top: 30px;
+    padding-top:30px;
 }
-
-.pet-banner .pet-container {
+.pet-banner .pet-container{
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.pet-banner .pet-container .small-logo {
+.pet-banner .pet-container .small-logo{
     position: absolute;
     top: 0;
     left: 0;
 }
-
-.pet-cat, .pet-dog {
+.pet-cat, .pet-dog{
     z-index: 100;
 
 }
-
-.pet-cat {
+.pet-cat  {
     width: 420px;
     position: absolute;
     left: calc(50% - 334px);
     bottom: -82px;
 }
 
-.pet-dog {
+.pet-dog{
     position: absolute;
     width: 279px;
     left: calc(50% + 120px);
     bottom: -117px;
 }
+
 
 
 .pet-bottom-line {
@@ -115,6 +112,65 @@ html {
     width: calc(100% - 100px);
     margin-left: 50px;
     margin-right: 50px;
+    background-repeat:repeat-x;
+
+}
+
+/*  media query */
+@media (max-width: 600px){
+  .pet__top-logo {
+      max-width: 150px;
+  }
+
+    .pet-banner {
+        border-radius: unset;
+    }
+
+    .pet-banner .pet-container .small-logo {
+        left: 15px;
+    }
+
+    .pet-cat {
+        width: 250px;
+        position: absolute;
+        left: calc(50% - 197px);
+        bottom: -40px;
+    }
+
+    .pet-dog {
+        position: absolute;
+        width: 184px;
+        left: calc(50% + 26px);
+        bottom: -71px;
+    }
+
+    .pet-bottom-line {
+        width: 100%;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .pet__content {
+        max-width: 100% !important;
+        margin-inline: unset;
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+}
+
+
+@media (max-width: 420px) {
+    .pet-cat {
+        width: 200px;
+        position: absolute;
+        left: calc(50% - 155px);
+    }
+
+    .pet-dog {
+        width: 140px;
+        left: calc(50% + 9px);
+    }
 }
 
 
@@ -123,17 +179,17 @@ html {
 /*  ======================= TOp Banner content Section Open  ====================================  */
 .pet__content {
     text-align: center;
-    max-width: 55%;
+    max-width: 75%;
     margin-inline: auto;
     margin-top: 130px;
 }
 
-.pet__content h2 {
+.pet__content h2{
     font-family: 'Apercu Pro';
     font-size: 40px;
+    color: #313133;
 }
-
-.pet__content h4 {
+.pet__content h4{
     color: #F05C1B;
     font-size: 20px;
     font-family: 'Apercu Pro';
@@ -142,16 +198,16 @@ html {
 
 .pet__content p {
     font-family: 'Apercu Pro';
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 25px;
+    color: #313133;
 }
 
 .pet__content .pet__link {
     margin-top: 25px;
     position: relative;
 }
-
-.pet__content .pet__link a {
+.pet__content .pet__link a{
     display: inline-block;
     background-color: #F05C1B;
     color: #fff;
@@ -159,9 +215,9 @@ html {
     font-family: 'Apercu Pro';
     padding: 1rem 2rem;
     border-radius: 25px;
+    font-size: 17px;
 }
-
-.pet__content .pet__link a::after {
+.pet__content .pet__link a::after{
     content: '';
     height: 15px;
     width: 15px;
@@ -180,7 +236,7 @@ html {
 }
 
 .pet__dog__cat .pet__dogcat__nav {
-    text-align: center;
+  text-align: center;
     width: 100%;
     margin-bottom: 55px;
 }
@@ -194,19 +250,17 @@ html {
     font-size: 25px;
 
 }
-
 .pet__dog__cat .pet__dogcat__nav ul li {
     margin-right: 55px;
     margin-left: 55px;
 }
-
-.pet__dog__cat .pet__dogcat__nav ul li a {
+.pet__dog__cat .pet__dogcat__nav ul li  a{
     color: #313133;
     text-decoration: none;
 
 }
 
-.pet__dog__cat .pet__dogcat__nav ul li a:hover, .pet__dog__cat .pet__dogcat__nav ul li.active {
+.pet__dog__cat .pet__dogcat__nav ul li  a:hover, .pet__dog__cat .pet__dogcat__nav ul li.active{
     border-bottom: 2px solid #F05C1B;
 }
 
@@ -216,22 +270,19 @@ html {
 }
 
 
-.pet__dog__cat .pet__row__inner {
+.pet__dog__cat  .pet__row__inner {
     display: flex;
 }
-
 .pet__dog__cat .pet__row__inner .pet__row__item__info {
     flex: 0 0 66.67%;
 }
-
 .pet__dog__cat .pet__row__inner .pet__row__item {
-    flex: 0 0 33.33%;
+    flex:0 0 33.33%;
 }
 
 .pet__dog__cat .pet__row__inner .pet__row__item > img {
     display: block;
 }
-
 .pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display {
     position: absolute;
     top: 0;
@@ -243,14 +294,15 @@ html {
     padding: 15px;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display h3 {
+.pet__dog__cat .pet__row__inner .pet__row__item   .pet__row__item-display h3{
     color: #F05C1B;
     font-family: 'Apercu Pro';
     font-size: 20px;
 }
 
 
-.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__row__item-display {
+
+.pet__dog__cat .pet__row__inner .pet__row__item:hover  .pet__row__item-display {
     visibility: hidden;
     opacity: 0;
     transition: all .5s;
@@ -262,14 +314,14 @@ html {
     transition: all .5s;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__item-overlay {
-    display: block;
+.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__item-overlay{
+   display: block;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(240, 92, 27, .9);
+    background: rgba(240,92,27,.9);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -283,18 +335,16 @@ html {
     max-width: 45px;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay h2 {
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay h2{
     font-size: 24px;
     padding-bottom: 15px;
 }
-
 .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay p {
     font-size: 20px;
     padding-top: 25px;
 
 }
-
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a {
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a{
     text-decoration: none;
     background: white;
     display: inline-block;
@@ -310,26 +360,22 @@ html {
 
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a > img {
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a > img{
     width: 30px;
     height: 30px;
 }
 
-.pet__dog, .pet__cat {
-    display: none;
+.pet__dog,.pet__cat{
+    display:none;
 }
 
-.pet__dog.active, .pet__cat.active {
-    display: block;
+.pet__dog.active,.pet__cat.active{
+    display:block;
+}
+.pet__row__item__info{
+    display:none;
 }
 
-.pet__row__item__info {
-    display: none;
-}
-
-.pet__dog__cat .pet__row__inner .pet__row__item {
-    /*display: none;*/
-}
 
 .pet__dog__cat .pet__row__inner .pet__row__item.active {
     display: block;
@@ -339,13 +385,119 @@ html {
     display: block;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display, .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay {
+.pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display, .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay{
     display: none;
 }
 
+.pet__dog__cat .pet__close-btn {
+    position: absolute;
+     bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+    background: #fff;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-top: 25px;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+
+.pet__dog__cat .pet__close-btn  > img {
+    max-width: 30px;
+}
+
+
+.pet__dog__cat .pet__close-btn:hover  > img {
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
+.pet__dog__cat .pet__row__inner .pet__short__des {
+    display: flex;
+    background-color: #F05C1B;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Apercu Pro';
+    color: #fff;
+
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item__info {
+    border-left: 20px solid #fff;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item__info > p{
+    font-family: 'Apercu Pro';
+    font-size: 20px;
+    padding-bottom: 25px;
+    color: #313133;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.pet__dog__cat .pet__row__inner .pet__short__des h3{
+    font-size: 20px;
+    font-family: 'Apercu Pro';
+}
+
+.pet__dog__cat .pet__row__inner .pet__short__des p{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: 'Apercu Pro';
+
+}
+
+
+.pet__dog__cat .pet__short__des .pet__right-info a{
+    display: block;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    color: #F05C1B;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Apercu Pro';
+    border-radius: 25px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+
+}
+
+.pet__dog__cat .pet__short__des .pet__right-info a:hover{
+    box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
+}
 .pet__row__item {
     transition: transform 0.6s ease;
 }
+
+
+@media (max-width: 991.98px) {
+    .pet__dog__cat .pet__row__inner {
+        flex-direction: column;
+    }
+    .pet__dog__cat .pet__row__inner .pet__row__item__info {
+        border-left: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    .pet__dog__cat .pet__row__inner .pet__short__des {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
 
 /*  ======================= CAt DOg Tab Section Close   ====================================  */
 
