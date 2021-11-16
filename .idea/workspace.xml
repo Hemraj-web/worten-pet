@@ -4,6 +4,8 @@
     <list default="true" id="1246ab40-fa6b-4c05-8f05-b428cf6f00e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worten-pet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worten-pet/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worten-pet/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +41,24 @@
       <updated>1637060594551</updated>
       <workItem from="1637060595923" duration="674000" />
       <workItem from="1637062793743" duration="21268000" />
+      <workItem from="1637090004481" duration="2900000" />
+      <workItem from="1637098638464" duration="6084000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
