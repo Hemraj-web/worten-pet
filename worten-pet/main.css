@@ -316,6 +316,21 @@ html{
 .pet__row__item__info{
     display:none;
 }
+.pet__dog__cat .pet__row__inner .pet__row__item {
+    display: none;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item.active {
+    display: block;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item__info.active {
+    display: block;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display, .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay{
+    display: none;
+}
 
 
 /*  ======================= CAt DOg Tab Section Close   ====================================  */
