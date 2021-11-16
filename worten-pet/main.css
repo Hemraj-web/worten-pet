@@ -332,6 +332,35 @@ html{
     display: none;
 }
 
+.pet__dog__cat .pet__close-btn {
+    position: absolute;
+     bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+    background: #fff;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-top: 25px;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+
+.pet__dog__cat .pet__close-btn  > img {
+    max-width: 30px;
+}
+
+
+.pet__dog__cat .pet__close-btn:hover  > img {
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
 
 /*  ======================= CAt DOg Tab Section Close   ====================================  */
 
