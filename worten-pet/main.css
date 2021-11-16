@@ -214,6 +214,9 @@ html{
 .pet__dog__cat  .pet__row__inner {
     display: flex;
 }
+.pet__dog__cat .pet__row__inner .pet__row__item__info {
+    flex: 0 0 66.67%;
+}
 .pet__dog__cat .pet__row__inner .pet__row__item {
     flex:0 0 33.33%;
 }
@@ -303,6 +306,16 @@ html{
     height: 30px;
 }
 
+.pet__dog,.pet__cat{
+    display:none;
+}
+
+.pet__dog.active,.pet__cat.active{
+    display:block;
+}
+.pet__row__item__info{
+    display:none;
+}
 
 
 /*  ======================= CAt DOg Tab Section Close   ====================================  */
