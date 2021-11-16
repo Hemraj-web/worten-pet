@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,33 +31,34 @@
 }
 
 
-
-
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* ========================== this code for all page Open ==========================  */
-.pet-container{
-   width: 100%;
+.pet-container {
+    width: 100%;
     max-width: 1200px;
 
     margin-right: auto;
     margin-left: auto;
 }
-.pet-row{
+
+.pet-row {
     display: flex;
     flex-wrap: wrap;
 }
-.pet-4{
+
+.pet-4 {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
-.pet-img{
+
+.pet-img {
     max-width: 100%;
     height: auto;
 }
+
 /* ========================== this code for all page Close  ==========================  */
 
 
@@ -69,37 +70,39 @@ html{
     position: relative;
 
     padding-bottom: 100px;
-    padding-top:30px;
+    padding-top: 30px;
 }
-.pet-banner .pet-container{
+
+.pet-banner .pet-container {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.pet-banner .pet-container .small-logo{
+.pet-banner .pet-container .small-logo {
     position: absolute;
     top: 0;
     left: 0;
 }
-.pet-cat, .pet-dog{
+
+.pet-cat, .pet-dog {
     z-index: 100;
 
 }
-.pet-cat  {
+
+.pet-cat {
     width: 420px;
     position: absolute;
     left: calc(50% - 334px);
     bottom: -82px;
 }
 
-.pet-dog{
+.pet-dog {
     position: absolute;
     width: 279px;
     left: calc(50% + 120px);
     bottom: -117px;
 }
-
 
 
 .pet-bottom-line {
@@ -115,9 +118,6 @@ html{
 }
 
 
-
-
-
 /* ========================== Top Banner Section  Open ==========================  */
 
 /*  ======================= TOp Banner content Section Open  ====================================  */
@@ -128,11 +128,12 @@ html{
     margin-top: 130px;
 }
 
-.pet__content h2{
+.pet__content h2 {
     font-family: 'Apercu Pro';
     font-size: 40px;
 }
-.pet__content h4{
+
+.pet__content h4 {
     color: #F05C1B;
     font-size: 20px;
     font-family: 'Apercu Pro';
@@ -149,7 +150,8 @@ html{
     margin-top: 25px;
     position: relative;
 }
-.pet__content .pet__link a{
+
+.pet__content .pet__link a {
     display: inline-block;
     background-color: #F05C1B;
     color: #fff;
@@ -158,7 +160,8 @@ html{
     padding: 1rem 2rem;
     border-radius: 25px;
 }
-.pet__content .pet__link a::after{
+
+.pet__content .pet__link a::after {
     content: '';
     height: 15px;
     width: 15px;
@@ -177,7 +180,7 @@ html{
 }
 
 .pet__dog__cat .pet__dogcat__nav {
-  text-align: center;
+    text-align: center;
     width: 100%;
     margin-bottom: 55px;
 }
@@ -191,17 +194,19 @@ html{
     font-size: 25px;
 
 }
+
 .pet__dog__cat .pet__dogcat__nav ul li {
     margin-right: 55px;
     margin-left: 55px;
 }
-.pet__dog__cat .pet__dogcat__nav ul li  a{
+
+.pet__dog__cat .pet__dogcat__nav ul li a {
     color: #313133;
     text-decoration: none;
 
 }
 
-.pet__dog__cat .pet__dogcat__nav ul li  a:hover, .pet__dog__cat .pet__dogcat__nav ul li.active{
+.pet__dog__cat .pet__dogcat__nav ul li a:hover, .pet__dog__cat .pet__dogcat__nav ul li.active {
     border-bottom: 2px solid #F05C1B;
 }
 
@@ -211,19 +216,22 @@ html{
 }
 
 
-.pet__dog__cat  .pet__row__inner {
+.pet__dog__cat .pet__row__inner {
     display: flex;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item__info {
     flex: 0 0 66.67%;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item {
-    flex:0 0 33.33%;
+    flex: 0 0 33.33%;
 }
 
 .pet__dog__cat .pet__row__inner .pet__row__item > img {
     display: block;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display {
     position: absolute;
     top: 0;
@@ -235,15 +243,14 @@ html{
     padding: 15px;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item   .pet__row__item-display h3{
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display h3 {
     color: #F05C1B;
     font-family: 'Apercu Pro';
     font-size: 20px;
 }
 
 
-
-.pet__dog__cat .pet__row__inner .pet__row__item:hover  .pet__row__item-display {
+.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__row__item-display {
     visibility: hidden;
     opacity: 0;
     transition: all .5s;
@@ -255,14 +262,14 @@ html{
     transition: all .5s;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__item-overlay{
-   display: block;
+.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__item-overlay {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(240,92,27,.9);
+    background: rgba(240, 92, 27, .9);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -276,16 +283,18 @@ html{
     max-width: 45px;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay h2{
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay h2 {
     font-size: 24px;
     padding-bottom: 15px;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay p {
     font-size: 20px;
     padding-top: 25px;
 
 }
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a{
+
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a {
     text-decoration: none;
     background: white;
     display: inline-block;
@@ -301,22 +310,42 @@ html{
 
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a > img{
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a > img {
     width: 30px;
     height: 30px;
 }
 
-.pet__dog,.pet__cat{
-    display:none;
+.pet__dog, .pet__cat {
+    display: none;
 }
 
-.pet__dog.active,.pet__cat.active{
-    display:block;
-}
-.pet__row__item__info{
-    display:none;
+.pet__dog.active, .pet__cat.active {
+    display: block;
 }
 
+.pet__row__item__info {
+    display: none;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item {
+    /*display: none;*/
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item.active {
+    display: block;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item__info.active {
+    display: block;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display, .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay {
+    display: none;
+}
+
+.pet__row__item {
+    transition: transform 0.6s ease;
+}
 
 /*  ======================= CAt DOg Tab Section Close   ====================================  */
 
