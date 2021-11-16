@@ -112,10 +112,66 @@ html{
     width: calc(100% - 100px);
     margin-left: 50px;
     margin-right: 50px;
+    background-repeat:repeat-x;
+
+}
+
+/*  media query */
+@media (max-width: 600px){
+  .pet__top-logo {
+      max-width: 150px;
+  }
+
+    .pet-banner {
+        border-radius: unset;
+    }
+
+    .pet-banner .pet-container .small-logo {
+        left: 15px;
+    }
+
+    .pet-cat {
+        width: 250px;
+        position: absolute;
+        left: calc(50% - 197px);
+        bottom: -40px;
+    }
+
+    .pet-dog {
+        position: absolute;
+        width: 184px;
+        left: calc(50% + 26px);
+        bottom: -71px;
+    }
+
+    .pet-bottom-line {
+        width: 100%;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .pet__content {
+        max-width: 100% !important;
+        margin-inline: unset;
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
 }
 
 
+@media (max-width: 420px) {
+    .pet-cat {
+        width: 200px;
+        position: absolute;
+        left: calc(50% - 155px);
+    }
 
+    .pet-dog {
+        width: 140px;
+        left: calc(50% + 9px);
+    }
+}
 
 
 /* ========================== Top Banner Section  Open ==========================  */
@@ -123,7 +179,7 @@ html{
 /*  ======================= TOp Banner content Section Open  ====================================  */
 .pet__content {
     text-align: center;
-    max-width: 55%;
+    max-width: 75%;
     margin-inline: auto;
     margin-top: 130px;
 }
@@ -131,6 +187,7 @@ html{
 .pet__content h2{
     font-family: 'Apercu Pro';
     font-size: 40px;
+    color: #313133;
 }
 .pet__content h4{
     color: #F05C1B;
@@ -141,8 +198,9 @@ html{
 
 .pet__content p {
     font-family: 'Apercu Pro';
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 25px;
+    color: #313133;
 }
 
 .pet__content .pet__link {
@@ -157,6 +215,7 @@ html{
     font-family: 'Apercu Pro';
     padding: 1rem 2rem;
     border-radius: 25px;
+    font-size: 17px;
 }
 .pet__content .pet__link a::after{
     content: '';
@@ -360,6 +419,83 @@ html{
     transform: rotate(180deg);
     transition: all .5s;
 }
+
+.pet__dog__cat .pet__row__inner .pet__short__des {
+    display: flex;
+    background-color: #F05C1B;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Apercu Pro';
+    color: #fff;
+
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item__info {
+    border-left: 20px solid #fff;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item__info > p{
+    font-family: 'Apercu Pro';
+    font-size: 20px;
+    padding-bottom: 25px;
+    color: #313133;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.pet__dog__cat .pet__row__inner .pet__short__des h3{
+    font-size: 20px;
+    font-family: 'Apercu Pro';
+}
+
+.pet__dog__cat .pet__row__inner .pet__short__des p{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: 'Apercu Pro';
+
+}
+
+
+.pet__dog__cat .pet__short__des .pet__right-info a{
+    display: block;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    color: #F05C1B;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Apercu Pro';
+    border-radius: 25px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+
+}
+
+.pet__dog__cat .pet__short__des .pet__right-info a:hover{
+    box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
+}
+
+
+@media (max-width: 991.98px) {
+    .pet__dog__cat .pet__row__inner {
+        flex-direction: column;
+    }
+    .pet__dog__cat .pet__row__inner .pet__row__item__info {
+        border-left: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    .pet__dog__cat .pet__row__inner .pet__short__des {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 
 
 /*  ======================= CAt DOg Tab Section Close   ====================================  */
