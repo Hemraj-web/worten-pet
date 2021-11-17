@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,33 +31,34 @@
 }
 
 
-
-
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* ========================== this code for all page Open ==========================  */
-.pet-container{
-   width: 100%;
+.pet-container {
+    width: 100%;
     max-width: 1200px;
 
     margin-right: auto;
     margin-left: auto;
 }
-.pet-row{
+
+.pet-row {
     display: flex;
     flex-wrap: wrap;
 }
-.pet-4{
+
+.pet-4 {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
-.pet-img{
+
+.pet-img {
     max-width: 100%;
     height: auto;
 }
+
 /* ========================== this code for all page Close  ==========================  */
 
 
@@ -69,37 +70,39 @@ html{
     position: relative;
 
     padding-bottom: 100px;
-    padding-top:30px;
+    padding-top: 30px;
 }
-.pet-banner .pet-container{
+
+.pet-banner .pet-container {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.pet-banner .pet-container .small-logo{
+.pet-banner .pet-container .small-logo {
     position: absolute;
     top: 0;
     left: 0;
 }
-.pet-cat, .pet-dog{
+
+.pet-cat, .pet-dog {
     z-index: 100;
 
 }
-.pet-cat  {
+
+.pet-cat {
     width: 420px;
     position: absolute;
     left: calc(50% - 334px);
     bottom: -82px;
 }
 
-.pet-dog{
+.pet-dog {
     position: absolute;
     width: 279px;
     left: calc(50% + 120px);
     bottom: -117px;
 }
-
 
 
 .pet-bottom-line {
@@ -112,15 +115,15 @@ html{
     width: calc(100% - 100px);
     margin-left: 50px;
     margin-right: 50px;
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
 
 }
 
 /*  media query */
-@media (max-width: 600px){
-  .pet__top-logo {
-      max-width: 150px;
-  }
+@media (max-width: 600px) {
+    .pet__top-logo {
+        max-width: 150px;
+    }
 
     .pet-banner {
         border-radius: unset;
@@ -184,12 +187,13 @@ html{
     margin-top: 130px;
 }
 
-.pet__content h2{
+.pet__content h2 {
     font-family: 'Apercu Pro';
     font-size: 40px;
     color: #313133;
 }
-.pet__content h4{
+
+.pet__content h4 {
     color: #F05C1B;
     font-size: 20px;
     font-family: 'Apercu Pro';
@@ -207,7 +211,8 @@ html{
     margin-top: 25px;
     position: relative;
 }
-.pet__content .pet__link a{
+
+.pet__content .pet__link a {
     display: inline-block;
     background-color: #F05C1B;
     color: #fff;
@@ -217,7 +222,8 @@ html{
     border-radius: 25px;
     font-size: 17px;
 }
-.pet__content .pet__link a::after{
+
+.pet__content .pet__link a::after {
     content: '';
     height: 15px;
     width: 15px;
@@ -236,7 +242,7 @@ html{
 }
 
 .pet__dog__cat .pet__dogcat__nav {
-  text-align: center;
+    text-align: center;
     width: 100%;
     margin-bottom: 55px;
 }
@@ -250,17 +256,19 @@ html{
     font-size: 25px;
 
 }
+
 .pet__dog__cat .pet__dogcat__nav ul li {
     margin-right: 55px;
     margin-left: 55px;
 }
-.pet__dog__cat .pet__dogcat__nav ul li  a{
+
+.pet__dog__cat .pet__dogcat__nav ul li a {
     color: #313133;
     text-decoration: none;
 
 }
 
-.pet__dog__cat .pet__dogcat__nav ul li  a:hover, .pet__dog__cat .pet__dogcat__nav ul li.active{
+.pet__dog__cat .pet__dogcat__nav ul li a:hover, .pet__dog__cat .pet__dogcat__nav ul li.active {
     border-bottom: 2px solid #F05C1B;
 }
 
@@ -270,19 +278,22 @@ html{
 }
 
 
-.pet__dog__cat  .pet__row__inner {
+.pet__dog__cat .pet__row__inner {
     display: flex;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item__info {
     flex: 0 0 66.67%;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item {
-    flex:0 0 33.33%;
+    flex: 0 0 33.33%;
 }
 
 .pet__dog__cat .pet__row__inner .pet__row__item > img {
     display: block;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display {
     position: absolute;
     top: 0;
@@ -294,15 +305,14 @@ html{
     padding: 15px;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item   .pet__row__item-display h3{
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display h3 {
     color: #F05C1B;
     font-family: 'Apercu Pro';
     font-size: 20px;
 }
 
 
-
-.pet__dog__cat .pet__row__inner .pet__row__item:hover  .pet__row__item-display {
+.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__row__item-display {
     visibility: hidden;
     opacity: 0;
     transition: all .5s;
@@ -314,37 +324,23 @@ html{
     transition: all .5s;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__item-overlay{
-   display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(240,92,27,.9);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-family: 'Apercu Pro';
-    color: #fff;
-    padding-left: 17%;
-    padding-bottom: 25px;
-}
 
 .pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display > img {
     max-width: 45px;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay h2{
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay h2 {
     font-size: 24px;
     padding-bottom: 15px;
 }
+
 .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay p {
     font-size: 20px;
     padding-top: 25px;
 
 }
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a{
+
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a {
     text-decoration: none;
     background: white;
     display: inline-block;
@@ -356,24 +352,25 @@ html{
     border-radius: 100%;
     margin-top: 25px;
     align-self: flex-end;
-    margin-right: 30px;
+    margin-right: 29px;
 
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a > img{
+.pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a > img {
     width: 30px;
     height: 30px;
 }
 
-.pet__dog,.pet__cat{
-    display:none;
+.pet__dog, .pet__cat {
+    display: none;
 }
 
-.pet__dog.active,.pet__cat.active{
-    display:block;
+.pet__dog.active, .pet__cat.active {
+    display: block;
 }
-.pet__row__item__info{
-    display:none;
+
+.pet__row__item__info {
+    display: none;
 }
 
 
@@ -385,14 +382,22 @@ html{
     display: block;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display, .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay{
+.pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display, .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay {
     display: none;
+}
+
+.pet__dog__cat .pet__row__item.active .pet__close-btn {
+    visibility: visible;
+}
+
+.pet__dog__cat .pet__close-btn {
+   visibility: hidden;
 }
 
 .pet__dog__cat .pet__close-btn {
     position: absolute;
-     bottom: 5%;
-    right: 5%;
+    bottom: 25px;
+    right: 0;
     text-decoration: none;
     background: #fff;
     display: inline-block;
@@ -404,16 +409,16 @@ html{
     border-radius: 100%;
     margin-top: 25px;
     align-self: flex-end;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 
-.pet__dog__cat .pet__close-btn  > img {
+.pet__dog__cat .pet__close-btn > img {
     max-width: 30px;
 }
 
 
-.pet__dog__cat .pet__close-btn:hover  > img {
+.pet__dog__cat .pet__close-btn:hover > img {
     transform: rotate(180deg);
     transition: all .5s;
 }
@@ -434,7 +439,7 @@ html{
     border-left: 20px solid #fff;
 }
 
-.pet__dog__cat .pet__row__inner .pet__row__item__info > p{
+.pet__dog__cat .pet__row__inner .pet__row__item__info > p {
     font-family: 'Apercu Pro';
     font-size: 20px;
     padding-bottom: 25px;
@@ -443,12 +448,13 @@ html{
     padding-right: 15px;
     padding-top: 15px;
 }
-.pet__dog__cat .pet__row__inner .pet__short__des h3{
+
+.pet__dog__cat .pet__row__inner .pet__short__des h3 {
     font-size: 20px;
     font-family: 'Apercu Pro';
 }
 
-.pet__dog__cat .pet__row__inner .pet__short__des p{
+.pet__dog__cat .pet__row__inner .pet__short__des p {
     padding-top: 5px;
     padding-bottom: 20px;
     font-size: 17px;
@@ -457,7 +463,7 @@ html{
 }
 
 
-.pet__dog__cat .pet__short__des .pet__right-info a{
+.pet__dog__cat .pet__short__des .pet__right-info a {
     display: block;
     background-color: #fff;
     padding: 1rem 2rem;
@@ -471,20 +477,35 @@ html{
 
 }
 
-.pet__dog__cat .pet__short__des .pet__right-info a:hover{
-    box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
-    -webkit-box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
-    -moz-box-shadow: -1px 6px 23px -14px rgba(0,0,0,1);
+.pet__dog__cat .pet__short__des .pet__right-info a:hover {
+    box-shadow: -1px 6px 23px -14px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -1px 6px 23px -14px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 6px 23px -14px rgba(0, 0, 0, 1);
 }
+
 .pet__row__item {
     transition: transform 0.6s ease;
 }
 
+.pet__dog__cat .pet__row__inner {
+    position: relative;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item__info {
+    position: absolute;
+    left: calc(100% / 3);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display, .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay {
+    visibility: hidden !important;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+}
 
 @media (max-width: 991.98px) {
-    .pet__dog__cat .pet__row__inner {
-        flex-direction: column;
-    }
+
     .pet__dog__cat .pet__row__inner .pet__row__item__info {
         border-left: unset;
     }
@@ -495,8 +516,37 @@ html{
         flex-direction: column;
         text-align: center;
     }
+
+    .pet__dog__cat .pet__row__inner {
+        flex-direction: column;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item__info {
+        position: relative;
+        left: unset;
+        z-index: unset;
+        flex: unset;
+    }
 }
 
+@media (min-width: 600px) {
+    .pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__item-overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(240, 92, 27, .9);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: 'Apercu Pro';
+        color: #fff;
+        padding-left: 17%;
+        padding-bottom: 25px;
+    }
+}
 
 
 /*  ======================= CAt DOg Tab Section Close   ====================================  */

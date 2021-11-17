@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="868f5408-4a35-4da8-a290-46a0f80ac959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/worten-pet/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/worten-pet/images/footer-pet-btm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/worten-pet/images/heater-btm-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/worten-pet/images/heater-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/worten-pet/images/heater.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/worten-pet/images/pet-btm-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/worten-pet/images/pet-part.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worten-pet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worten-pet/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worten-pet/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/worten-pet" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -44,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637075243698</updated>
       <workItem from="1637075244842" duration="1421000" />
+      <workItem from="1637126518363" duration="13706000" />
     </task>
     <servers />
   </component>
