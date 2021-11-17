@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="868f5408-4a35-4da8-a290-46a0f80ac959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/worten-pet/images/footer-pet-btm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/worten-pet/images/heater-btm-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/worten-pet/images/heater-line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/worten-pet/images/heater.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/worten-pet/images/pet-btm-line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/worten-pet/images/pet-part.png" afterDir="false" />
+    <list default="true" id="11061b8e-499a-4b6e-87d9-7f6d17de822f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worten-pet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worten-pet/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worten-pet/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="210PtBxtwK4sLfp9Hp8ZsxbzlC6" />
+  <component name="ProjectId" id="212cKBoP3ITXJK9R6LBa7sPHPI5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,42 +25,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/worten-pet" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Office\laragon\www\html_template\worten-pet\worten-pet" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="868f5408-4a35-4da8-a290-46a0f80ac959" name="Default Changelist" comment="" />
-      <created>1637075243698</created>
+      <changelist id="11061b8e-499a-4b6e-87d9-7f6d17de822f" name="Default Changelist" comment="" />
+      <created>1637142557076</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637075243698</updated>
-      <workItem from="1637075244842" duration="1421000" />
-      <workItem from="1637126518363" duration="13706000" />
+      <updated>1637142557076</updated>
+      <workItem from="1637142558464" duration="2740000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
