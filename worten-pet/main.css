@@ -222,16 +222,11 @@ html {
     border-radius: 25px;
     font-size: 17px;
 }
-
-.pet__content .pet__link a::after {
-    content: '';
-    height: 15px;
-    width: 15px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    position: absolute;
-    transform: rotate(-45deg);
+.pet__content .pet__link a > div {
+    width: 100%;
 }
+
+
 
 /*  ======================= TOp Banner content Section Close  ====================================  */
 
