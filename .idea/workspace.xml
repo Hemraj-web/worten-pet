@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11061b8e-499a-4b6e-87d9-7f6d17de822f" name="Default Changelist" comment="">
+    <list default="true" id="38c4e2b2-daf8-4acb-a38f-f0c50cbfbaed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worten-pet/images/gatos/maria.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/images/gatos/maria.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worten-pet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worten-pet/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worten-pet/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/worten-pet/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,5 +55,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

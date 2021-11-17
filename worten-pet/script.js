@@ -11,17 +11,23 @@ $(document).ready(function () {
       parent_class.find('.pet__row__item').removeClass('active');
       if (windowsize > 600) {
         pet__animation(parent_class, pr__class, "0", "0", false);
-      }else{
+      } else {
         parent_class.find('.' + pr__class).slideUp('slow')
           .animate(
-            { opacity: 1 },
-            { queue: false, duration: 'slow' }
+            {opacity: 1},
+            {queue: false, duration: 'slow'}
           );
       }
+      var image__height = $(this).find('.pet-img').height();
+      $(this).height(image__height);
+      console.log(image__height);
 
     } else {
 
       $(this).addClass('active');
+      var info__height = parent_class.find('.' + pr__class).height();
+      $(this).height(info__height);
+
       $(this).removeClass('deactivate');
       $('.pet__row__item__info').removeClass('active');
 
@@ -33,21 +39,21 @@ $(document).ready(function () {
         pet__animation(parent_class, pr__class, "-333px", "-682px", true);
       } else if (windowsize < 991 && windowsize > 888) {
         pet__animation(parent_class, pr__class, "-313px", "-645px", true);
-      }else if (windowsize < 888 && windowsize > 808) {
+      } else if (windowsize < 888 && windowsize > 808) {
         pet__animation(parent_class, pr__class, "-288px", "-593px", true);
-      }else if (windowsize < 808 && windowsize > 750) {
+      } else if (windowsize < 808 && windowsize > 750) {
         pet__animation(parent_class, pr__class, "-260px", "-544px", true);
-      }else if (windowsize < 750 && windowsize > 706) {
+      } else if (windowsize < 750 && windowsize > 706) {
         pet__animation(parent_class, pr__class, "-250px", "-507px", true);
-      }else if (windowsize < 706 && windowsize > 648) {
+      } else if (windowsize < 706 && windowsize > 648) {
         pet__animation(parent_class, pr__class, "-240px", "-470px", true);
-      }else if (windowsize < 648 && windowsize > 600) {
+      } else if (windowsize < 648 && windowsize > 600) {
         pet__animation(parent_class, pr__class, "-230px", "-419px", true);
-      }else{
+      } else {
         parent_class.find('.' + pr__class).slideDown('slow')
           .animate(
-            { opacity: 1 },
-            { queue: false, duration: 'slow' }
+            {opacity: 1},
+            {queue: false, duration: 'slow'}
           );
       }
 
@@ -56,10 +62,11 @@ $(document).ready(function () {
   });
 
   function pet__animation(parent_class, pr__class, second_px, third_px, fadeIn) {
+
     if (fadeIn) {
-      parent_class.find('.' + pr__class).fadeIn(600);
+      parent_class.find('.' + pr__class).fadeIn(600).css({"z-index": "4"});
     } else {
-      parent_class.find('.' + pr__class).fadeOut(1000);
+      parent_class.find('.' + pr__class).fadeOut(1000).css({"z-index": "0"});
     }
     if (pr__class == "pr__1") {
       parent_class.find('[data-pr="pr__2"]').css({"transform": "translate(" + second_px + ",0)", "z-index": "1"});
