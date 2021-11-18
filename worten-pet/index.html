@@ -2700,11 +2700,12 @@
         }
         if (windowsize < 600) {
           if(pr__class == "pr__1"){
-            parent_class.css({'justify-content':'flex-start'});
+            // parent_class.css({'justify-content':'flex-start'});
             parent_class.find('[data-pr="pr__2"]').removeClass("deactivate").hide().fadeIn(1100);
           }else{
-            parent_class.css({'justify-content':'flex-end'});
-            parent_class.find('[data-pr="pr__1"]').removeClass("deactivate").delay(500).hide().fadeIn(1100);
+            // parent_class.css({'justify-content':'flex-end'});
+            // parent_class.find('[data-pr="pr__1"]').removeClass("deactivate").delay(500).hide().fadeIn(1100);
+            parent_class.find('[data-pr="pr__1"]').removeClass("deactivate").fadeIn(1100);
           }
         }else{
           var image__height = $(this).find('.pet-img').height();
