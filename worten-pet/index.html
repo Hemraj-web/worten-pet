@@ -11,16 +11,195 @@
 
 </head>
 <body>
-<!-- ======================= TOp Banner Section Open ====================================  -->
 
+
+<!-- css for all -->
+<style>
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'Apercu Pro';
+        src: url('https://www.worten.pt/i/343c66f0dfa4963ad71231d02df38cc19176058e');
+        src: url('https://www.worten.pt/i/343c66f0dfa4963ad71231d02df38cc19176058e') format('embedded-opentype'),
+        url('https://www.worten.pt/i/45842883f2aeec4e77661a2d891aff689ed0acd7') format('woff2'),
+        url('https://www.worten.pt/i/90195f34342af15547cfed46f10270a9499f352d') format('woff'),
+        url('https://www.worten.pt/i/0dd1a03136de4a3747c504afc09f10f6b87e7e0e') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Lato';
+        src: url('https://www.worten.pt/i/33cf64a1a743e007a6343edb293a4fddeb066514');
+        src: url('https://www.worten.pt/i/33cf64a1a743e007a6343edb293a4fddeb066514') format('embedded-opentype'),
+        url('https://www.worten.pt/i/d50d1a56d66cf1991f7c21c0ca7b7501c504868d') format('woff2'),
+        url('https://www.worten.pt/i/fee666528a8a52ad95015218f5f606e4819b0f26') format('woff'),
+        url('https://www.worten.pt/i/36c0d7e7f0d5d150d5a350ac52c34f82330b97f1') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .pet-container {
+        width: 100%;
+        max-width: 1200px;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .pet-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pet-4 {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .pet-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+</style>
+<!-- ======================= TOp Banner Section Open ====================================  -->
+<style>
+    .pet-banner {
+        background-color: #F05C1B;
+        border-radius: 35px;
+        position: relative;
+
+        padding-bottom: 100px;
+        padding-top: 30px;
+    }
+
+    .pet-banner .pet-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .pet-banner .pet-container .small-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .pet-cat,
+    .pet-dog {
+        z-index: 1;
+
+    }
+
+    .pet-cat {
+        width: 420px;
+        position: absolute;
+        left: calc(50% - 334px);
+        bottom: -82px;
+    }
+
+    .pet-dog {
+        position: absolute;
+        width: 279px;
+        left: calc(50% + 120px);
+        bottom: -117px;
+    }
+
+
+    .pet-bottom-line {
+        background-image: url("https://www.worten.pt/i/92054f0603a4c3fde217a6a92b92b96a2925ea02");
+        background-size: contain;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-right: 50px;
+        background-repeat: repeat-x;
+
+    }
+
+    /*  media query */
+    @media (max-width: 600px) {
+        .pet__top-logo {
+            max-width: 150px;
+        }
+
+        .pet-banner {
+            border-radius: unset;
+        }
+
+        .pet-banner .pet-container .small-logo {
+            left: 15px;
+        }
+
+        .pet-cat {
+            width: 250px;
+            position: absolute;
+            left: calc(50% - 197px);
+            bottom: -40px;
+        }
+
+        .pet-dog {
+            position: absolute;
+            width: 184px;
+            left: calc(50% + 26px);
+            bottom: -71px;
+        }
+
+        .pet-bottom-line {
+            width: 100%;
+            margin-right: unset;
+            margin-left: unset;
+        }
+
+        .pet__content {
+            max-width: 100% !important;
+            margin-inline: unset;
+            padding-right: 15px;
+            padding-left: 15px;
+
+        }
+    }
+
+
+    @media (max-width: 420px) {
+        .pet-cat {
+            width: 200px;
+            position: absolute;
+            left: calc(50% - 155px);
+        }
+
+        .pet-dog {
+            width: 140px;
+            left: calc(50% + 9px);
+        }
+    }
+
+</style>
 <div class="pet-banner">
   <div class="pet-container">
-    <img src="images/70year.png" class="small-logo" alt="Worten">
-    <img src="images/pet-logo.png" class="pet__top-logo" alt="Worten">
+    <img src="https://www.worten.pt/i/6cd718d7bd29a250af1af6947fff3b00228d194d" class="small-logo" alt="Worten">
+    <img src="https://www.worten.pt/i/ac100d4c63a79365e1317ec2d9eada6d85e75ba7" class="pet__top-logo" alt="Worten">
   </div>
   <!--     pets images -->
-  <img src="images/cat.png" class="pet-cat" alt="">
-  <img src="images/dog.png" class="pet-dog" alt="">
+  <img src="https://www.worten.pt/i/c5e65f3c730fc4121e1e63c36b5b90275a197a84" class="pet-cat" alt="">
+  <img src="https://www.worten.pt/i/b51a454045cc8a6bf774026dfdc176a8dafc18b8" class="pet-dog" alt="">
 
   <div class="pet-bottom-line">
   </div>
@@ -29,6 +208,56 @@
 <!-- ======================= TOp Banner Section Close  ====================================  -->
 
 <!-- ======================= TOp Banner content Section Open  ====================================  -->
+
+<style>
+    .pet__content {
+        text-align: center;
+        max-width: 75%;
+        margin-inline: auto;
+        margin-top: 130px;
+    }
+
+    .pet__content h2 {
+        font-family: 'Apercu Pro';
+        font-size: 40px;
+        color: #313133;
+    }
+
+    .pet__content h4 {
+        color: #F05C1B;
+        font-size: 40px;
+        font-family: 'Apercu Pro';
+        margin-bottom: 25px;
+    }
+
+    .pet__content p {
+        font-family: 'Apercu Pro';
+        font-size: 20px;
+        margin-top: 25px;
+        color: #313133;
+    }
+
+    .pet__content .pet__link {
+        margin-top: 25px;
+        position: relative;
+    }
+
+    .pet__content .pet__link a {
+        display: inline-block;
+        background-color: #F05C1B;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Apercu Pro';
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        font-size: 17px;
+    }
+
+    .pet__content .pet__link a > div {
+        width: 100%;
+    }
+
+</style>
 <div class="pet-container">
   <div class="pet-row">
     <div class="pet__content">
@@ -38,13 +267,20 @@
         Não há melhor aquecedor do que um animal de estimação, por isso juntámo-nos à União Zoófila para te dar
         a conhecer os animais para adoção mais fofos e quentinhos de sempre!
       </p>
+      <div class="pet__link pet__catdog__mob">
+        <a href="#form"><span>Conhece os nossos Aquecedores de Estimação</span><img
+            src="https://www.worten.pt/i/72ec52be98a81893cd39d4b8a15482221680fcd6" height="17" width="28"/></a>
+
+      </div>
       <p>
         Alguns são aquecedores natos, sempre ligados em modo ronrom ou caudinha a abanar. Outros chegam-nos a
         precisar de “arranjo”, ou simplesmente de muito amor. Mas todos eles têm muito calor para dar, basta que
         lhes dês uma oportunidade.
       </p>
-      <div class="pet__link">
-        <a href="#">Conhece os nossos Aquecedores de Estimação</a>
+      <div class="pet__link pet__catdog__desk">
+        <a href="#form"><span>Conhece os nossos Aquecedores de Estimação</span><img
+            src="https://www.worten.pt/i/72ec52be98a81893cd39d4b8a15482221680fcd6" height="17" width="28"/></a>
+
       </div>
     </div>
   </div>
@@ -52,14 +288,400 @@
 <!-- ======================= TOp Banner content Section Close   ====================================  -->
 
 
-<!-- =================================
-============ This Is for DESKTOP OPEN ========================
-=========================================== -->
-
-
 <!-- ======================= CAt DOg Tab Section Open   ====================================  -->
+
+<style>
+    .pet__dog__cat {
+        margin-top: 55px;
+    }
+
+    .pet__dog__cat .pet__dogcat__nav {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 55px;
+    }
+
+    .pet__dog__cat .pet__dogcat__nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        font-family: 'Apercu Pro';
+        font-size: 25px;
+
+    }
+
+    .pet__dog__cat .pet__dogcat__nav ul li {
+        margin-right: 55px;
+        margin-left: 55px;
+    }
+
+    .pet__dog__cat .pet__dogcat__nav ul li a {
+        color: #313133;
+        text-decoration: none;
+
+    }
+
+    .pet__dog__cat .pet__dogcat__nav ul li a:hover,
+    .pet__dog__cat .pet__dogcat__nav ul li.active {
+        border-bottom: 2px solid #F05C1B;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item {
+        position: relative;
+
+    }
+
+
+    .pet__dog__cat .pet__row__inner {
+        display: flex;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item__info {
+        flex: 0 0 66.67%;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item {
+        flex: 0 0 33.33%;
+        transition: all .5s;
+    }
+
+    .pet_ola_rel {
+        position: relative;
+    }
+
+    .pet__link a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 448px;
+        margin: auto;
+        position: relative;
+    }
+
+    .pet__link a img {
+        width: 19px;
+        height: auto;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4px;
+
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item > img {
+        display: block;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display h3 {
+        color: #F05C1B;
+        font-family: 'Apercu Pro';
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__row__item-display {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s;
+    }
+
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay {
+        display: none;
+        transition: all .5s;
+    }
+
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__row__item-display > img {
+        max-width: 45px;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay p {
+        font-size: 20px;
+        padding-top: 25px;
+
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a {
+        text-decoration: none;
+        background: white;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        margin-top: 25px;
+        align-self: flex-end;
+        margin-right: 29px;
+
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item .pet__item-overlay a > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pet__dog,
+    .pet__cat {
+        display: none;
+    }
+
+    .pet__dog.active,
+    .pet__cat.active {
+        display: block;
+    }
+
+    .pet__row__item__info {
+        display: none;
+    }
+
+
+    .pet__dog__cat .pet__row__inner .pet__row__item.active {
+        display: block;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item__info.active {
+        display: block;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display,
+    .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay {
+        display: none;
+    }
+
+    .pet__dog__cat .pet__row__item.active .pet__close-btn {
+        visibility: visible;
+    }
+
+    .pet__dog__cat .pet__close-btn {
+        visibility: hidden;
+    }
+
+    .pet__dog__cat .pet__close-btn {
+        position: absolute;
+        bottom: 25px;
+        right: 0;
+        text-decoration: none;
+        background: #fff;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        margin-top: 25px;
+        align-self: flex-end;
+        margin-right: 25px;
+    }
+
+
+    .pet__dog__cat .pet__close-btn > img {
+        max-width: 30px;
+    }
+
+
+    .pet__dog__cat .pet__close-btn:hover > img {
+        transform: rotate(180deg);
+        transition: all .5s;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__short__des {
+        display: flex;
+        background-color: #F05C1B;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-family: 'Apercu Pro';
+        color: #fff;
+
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item__info {
+        border-left: 20px solid #fff;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item__info > p {
+        font-family: 'Apercu Pro';
+        font-size: 20px;
+        padding-bottom: 25px;
+        color: #313133;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__short__des h3 {
+        font-size: 20px;
+        font-family: 'Apercu Pro';
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__short__des p {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        font-size: 17px;
+        font-family: 'Apercu Pro';
+
+    }
+
+
+    .pet__dog__cat .pet__short__des .pet__right-info a {
+        display: block;
+        background-color: #fff;
+        padding: 1rem 2rem;
+        color: #F05C1B;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Apercu Pro';
+        border-radius: 25px;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+
+    }
+
+    .pet__dog__cat .pet__short__des .pet__right-info a:hover {
+        box-shadow: -1px 6px 23px -14px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: -1px 6px 23px -14px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -1px 6px 23px -14px rgba(0, 0, 0, 1);
+    }
+
+    .pet__row__item {
+        transition: transform 0.6s ease;
+    }
+
+    .pet__dog__cat .pet__row__inner {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item__info {
+        position: absolute;
+        left: calc(100% / 3);
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__row__item-display,
+    .pet__dog__cat .pet__row__inner .pet__row__item.active .pet__item-overlay {
+        visibility: hidden !important;
+        opacity: 0;
+        transition: visibility 0.3s linear, opacity 0.3s linear;
+    }
+
+    @media (max-width: 991.98px) {
+
+        .pet__dog__cat .pet__row__inner .pet__row__item__info {
+            border-left: unset;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .pet__dog__cat .pet__row__inner .pet__short__des {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .pet__dog__cat .pet__row__inner {
+            flex-direction: column;
+        }
+
+        .pet__dog__cat .pet__row__inner .pet__row__item__info {
+            position: relative;
+            left: unset;
+            z-index: unset;
+            flex: unset;
+        }
+        .pet__catdog__mob .pet__row__inner .pet__row__item__info {
+            flex:0 0 100%;
+
+        }
+
+        .pet__catdog__desk {
+            display: none !important;
+        }
+
+        .pet__catdog__mob {
+            display: block !important;
+        }
+
+        .pet__dog__cat .pet__catdog__mob .pet__row__inner.active {
+            flex-direction: unset;
+        }
+        .pet__dog__cat .pet__catdog__mob .pet__row__inner {
+            flex-direction: row;
+            flex-wrap:wrap;
+        }
+        .pet__dog__cat .pet__catdog__mob .pet__row__inner .pet__row__item {
+            flex: 0 0 50%;
+            transition: all .5s;
+            opacity: 1;
+        }
+        .pet__dog__cat .pet__catdog__mob .pet__row__inner .pet__row__item.active{
+            flex:0 0 100%;
+        }
+        .pet__dog__cat .pet__catdog__mob .pet__row__inner .pet__row__item.deactivate{
+            z-index: -1;
+            position:absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .5s;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .pet__dog__cat .pet__row__inner .pet__row__item:hover .pet__item-overlay {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(240, 92, 27, .9);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-family: 'Apercu Pro';
+            color: #fff;
+            padding-left: 17%;
+            padding-bottom: 25px;
+        }
+
+        .pet__catdog__desk {
+            display: block !important;
+        }
+
+        .pet__catdog__mob {
+            display: none !important;
+        }
+    }
+
+</style>
 <div class="pet-container pet__dog__cat">
-  <div class="pet-row">
+
+  <!-- ======================= Desktop Cat  Section Open   ====================================  -->
+  <div class="pet-row pet__catdog__desk">
     <div class="pet__dogcat__nav">
       <ul>
         <li class="active"><a href="#" data-tab__class=".pet__cat">Gatos</a></li>
@@ -70,10 +692,11 @@
       <div class="pet__row__inner">
         <div data-pr="pr__1" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/3fd1c71435d214a5cac611aa245eaf3bc8311238" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
               <h3>Rosa Real</h3>
             </div>
             <div class="pet__item-overlay">
@@ -82,7 +705,8 @@
                 <strong> Meiguice em modo full-on</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
@@ -104,14 +728,15 @@
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>9 anos e 4 meses
+              </p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -119,10 +744,11 @@
 
         <div data-pr="pr__2" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/folha.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/ecce26aea34524c65ba391d82410e1b5455c8c3c" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
               <h3>Folha</h3>
             </div>
             <div class="pet__item-overlay">
@@ -131,7 +757,8 @@
                 <strong> Folha, uma manta de pelo adorável </strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#form" data-pr="pr__1"> <img
+                  src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5" alt=""> </a>
             </div>
           </div>
         </div>
@@ -157,7 +784,7 @@
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -165,10 +792,11 @@
 
         <div data-pr="pr__3" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/folha.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/d77f1723bc0e2ecb5fe536aaaa4eba4fefde89bf" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
               <h3>Maria Costureira</h3>
             </div>
             <div class="pet__item-overlay">
@@ -177,7 +805,8 @@
                 <strong> Maria Costureira, toda ela personalidade</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
         </div>
@@ -204,7 +833,7 @@
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -213,29 +842,30 @@
       <div class="pet__row__inner">
         <div data-pr="pr__1" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/cdfc5d057ba2ad847bb3bbf36f52fb5b789ecfef" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Carlota</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Carlota</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong>Carlota, a energia não se esgota</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
 
         </div>
         <div class="pet__row__item__info pr__1">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p> A Carlota é uma gatinha jovem e com muita energia. É extremamente brincalhona e curiosa. Gosta
+            da nossa atenção e de mimos, mas tem uma personalidade forte. Não gosta de outros gatos. A
+            Carlota procura agora uma família que a estime no resto da sua longa vida.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
@@ -243,65 +873,67 @@
               <p>Feminino (esterilizada)</p>
 
               <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <p></p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>3 anos e 3 meses </p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
 
         <div data-pr="pr__2" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/9928bcb7992b3c82c2326fc084dcd5ce372b0748" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Teotónio</h3>
+
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Teotónio</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> Teotónio, um aquecedor em miniatura </strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__2">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p> O Teotónio é um bebé receoso, mas muito doce e brincalhão. Com tempo, paciência e muito carinho,
+            ganhará confiança rapidamente. Dá-se muito bem com outros gatos. O Teotónio procura agora uma
+            família que o conquiste e estime no resto da sua longa vida.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>Masculino</p>
 
               <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <p></p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> 6 meses</p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -309,47 +941,49 @@
 
         <div data-pr="pr__3" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/61130223a85ad9d4759b43510272334751edf251" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Chico de Belém</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Chico de Belém</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> Chico de Belém, um tímido muito quentinho</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__3">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p> O Chico de Belém é um gatinho tímido, mas doce. Gosta de mimos e ganha rapidamente confiança nas
+            pessoas. Dá-se bem com outros gatos. O Chico de Belém procura agora uma família que o estime no
+            resto da sua longa vida.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> Masculino (castrado) </p>
 
               <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <p></p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>7 anos e 9 meses </p>
 
               <h3>Raça</h3>
-              <p> Europeu Comum (indefinida)</p>
+              <p>Europeu Comum (indefinida)
+              </p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -358,95 +992,100 @@
       <div class="pet__row__inner">
         <div data-pr="pr__1" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/e95c6255821ba8425aab6498ff6781672479129f" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Bob Esponja </h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Bob Esponja</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong>o distribuidor de turrinhas</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
 
         </div>
         <div class="pet__row__item__info pr__1">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Bob Esponja é um gatinho absolutamente maravilhoso. Adora atenção, companhia e todos os mimos
+            que lhe possamos dar. Para chamar a nossa atenção, gosta de nos dar turrinhas nas pernas e fica
+            à espera de festinhas. Dá-se bem com outros gatos e procura agora uma família que o estime no
+            resto da sua longa vida e que não se importe que ele seja FIV positivo. </p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> Masculino (castrado) </p>
 
               <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <p></p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> 8 anos e 10 meses</p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
 
         <div data-pr="pr__2" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/22f1737f0f260dac4a0a85671c50276211a7d12f" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3> Kilimanjaro e Top Choc</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2> Kilimanjaro e Top Choc</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong>Kilimanjaro e Top Choc, o dobro do calor</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__2">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Killimanjaro e o Top Choc são dois gatinhos fantásticos. Adoram a nossa atenção, companhia e
+            muitos, muitos mimos! São gatinhos muito calmos e tranquilos com toda a gente. Dão-se muito bem
+            com outros gatos, mas especialmente um com o outro, pois são melhores amigos inseparáveis. O
+            Killimanjaro e o Top Choc procuram agora uma família que os estime no resto das suas longas
+            vidas.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> Masculino (castrado) </p>
 
               <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <p></p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>6 anos e 10 meses </p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -454,148 +1093,152 @@
 
         <div data-pr="pr__3" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/d089b1bfdff7cf469625143626ab28e895630d2a" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Hulk</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Hulk</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> Hulk, o anfitrião das festas</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__3">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Hulk é um gatinho espetacular. Adora a nossa atenção e só quer festas e mimo a toda a hora! É
+            um gatinho super calmo e doce, mas também adora brincar. Dá-se bem com outros gatos. O Hulk
+            procura agora uma família que o estime no resto da sua longa vida e que não se importe que ele
+            seja FIV e FeLV positivo.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>Masculino (castrado)</p>
 
               <h3>Tempo em</h3>
               <p> 3 meses</p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>11 anos e 3 meses </p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
 
       </div>
-
-
     </div>
+
     <div class="pet-row pet__dog">
       <div class="pet__row__inner">
         <div data-pr="pr__1" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/9eca506f16a0c30984f5b6345dd41d23a7433a7b" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Colibri</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Colibri</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> o mestre dos miminhos</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
 
         </div>
         <div class="pet__row__item__info pr__1">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Colibri é um pequenote super alegre e completamente amoroso. Mal conhece e já está com as
+            patinhas apoiadas nas nossas pernas a pedir carinho. Mais que tudo, ele quer é receber mimo! Nos
+            intervalos, também gosta de brincar com os outros cães e de farejar todos os novos cheiros que
+            encontra.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> Masculino (castrado) </p>
 
-              <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <h3>Porte</h3>
+              <p> Pequeno </p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>4 anos e 5 meses </p>
 
               <h3>Raça</h3>
-              <p> Europeu Comum (indefinida)</p>
+              <p> Podengo Pequeno Português (arraçado)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
 
         <div data-pr="pr__2" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/c0f9b0bf7c6f9318b21342dc7e8ae0e44a6d0fad" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Indira</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Indira</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> um doce com muito calor para dar</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__2">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>Esta beleza é a Indira. É uma paz de alma e de alguma forma transmite essa paz. Pode ser de porte
+            grande, mas é suave e delicada, e é doce. Cadela muito meiga, tranquila e discreta, que se dá
+            bem com toda a gente. A Indira espera muito por uma casa.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
               <p>Feminino (esterilizada)</p>
 
-              <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <h3>Porte</h3>
+              <p> Grande</p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> 8 anos e 9 meses</p>
 
               <h3>Raça</h3>
-              <p> Europeu Comum (indefinida)</p>
+              <p> Rafeira (indefinida) </p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -603,47 +1246,50 @@
 
         <div data-pr="pr__3" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/3a83364bf494ce8740d6abe0b130551feab16d5c" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Plus</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Plus</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> um pequenote com pilhas duracell</strong> <br>
                 Aquece a casa e o coração
+
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__3">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Plus é um pequenote super enérgico que adora estar ocupado e entretido com tudo o que o rodeia.
+            É muito sociável e meigo, salta logo para o colo na primeira oportunidade e adora mimo. Dá-se
+            bem com outros cães, mas é muito intenso em todas as suas interações. Precisa de uma casa que
+            lhe traga o equilíbrio de que precisa para relaxar.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p> Masculino (castrado)</p>
 
-              <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <h3>Porte</h3>
+              <p> Pequeno</p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>1 ano e 10 meses </p>
 
               <h3>Raça</h3>
-              <p> Europeu Comum (indefinida)</p>
+              <p> Rafeiro (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -652,95 +1298,101 @@
       <div class="pet__row__inner">
         <div data-pr="pr__1" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/d74cee002c843523c24f31f93f38dcfe0f7e0247" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Damas Boy</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Damas Boy</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> o bebezola que derrete corações
+                </strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
 
         </div>
         <div class="pet__row__item__info pr__1">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Damas Boy é um bebezola querido, alegre e meigo, muito sociável com todas as pessoas. Procura
+            uma família que o queira do seu lado por toda a sua vida e que o trate sempre com o respeito,
+            cuidados e carinho que merece.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>Masculino (castrado)
+              </p>
 
-              <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <h3>Porte</h3>
+              <p> Médio</p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>11 meses
+              </p>
 
               <h3>Raça</h3>
-              <p> Europeu Comum (indefinida)</p>
+              <p> Pit Bull Terrier Americano (arraçado)
+              </p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
 
         <div data-pr="pr__2" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/a4fff8c0e19d0dd80c78564a7e6ef408f59aaf59" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Ben Hur</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Ben Hur</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> Ben Hur, um grandalhão que irradia amor</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__2">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Ben Hur é um grandalhão que chegou debilitado, fragilizado e muito apático. A sua transformação
+            tem sido muito boa de se ver. O Ben agora adora estar acompanhado, sendo ele um companheirão
+            também. É meigo, calmo, muito dócil e pacato. </p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>Masculino (castrado) </p>
 
-              <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <h3>Porte</h3>
+              <p> Grande</p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>7 anos e 10 meses</p>
 
               <h3>Raça</h3>
-              <p> Europeu Comum (indefinida)</p>
+              <p> Rafeiro (indefinida) </p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -748,47 +1400,51 @@
 
         <div data-pr="pr__3" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/3336580ad2fd6a054b81454c420e68b2af18cd52" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Chulupi</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Chulupi</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> o nosso especialista em preguiça</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
         </div>
         <div class="pet__row__item__info pr__3">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>O Chulupi é um cão querido, bem-disposto, muito expressivo e brincalhão. Pode parecer
+            inicialmente desinteressado, mas logo se mostra muito curioso e comunicativo. Adora o conforto
+            da sua caminha e é preguiçoso para se levantar, mas em troca de umas festas fica logo convencido
+            a levantar-se.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
               <h3>Género</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>Masculino (castrado)
+              </p>
 
-              <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <h3>Porte</h3>
+              <p> Médio</p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>7 anos e 10 meses</p>
 
               <h3>Raça</h3>
-              <p> Europeu Comum (indefinida)</p>
+              <p>Rafeiro (indefinida)
+              </p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -797,10 +1453,136 @@
       <div class="pet__row__inner">
         <div data-pr="pr__1" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/4b0a2c6f340fb5cb6c2e5ad81743498ed31b2975" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Chica Bella</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Chica Bella</h2>
+              <p>
+                <strong> Chica Bella, ternura na potência máxima</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p> A Chica Bella inicialmente mostra-se reservada e medrosa, mas ao ganhar confiança transforma-se
+            na maior ternurinha. É muito doce e carinhosa. Uma das patinhas teve de ser amputada, pois foi
+            resgatada com um tumor nessa pata. A Chica recuperou, está de boa saúde e completamente adaptada
+            à sua nova condição. </p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Feminino (esterilizada)
+              </p>
+
+              <h3>Porte</h3>
+              <p> Médio
+              </p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>9 anos e 10 meses
+              </p>
+
+              <h3>Raça</h3>
+              <p> Rafeira (indefinida)
+              </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/bbeae84ee33f9cc1099931d66b2afa3c95d561ee" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Periguete</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Periguete</h2>
+              <p>
+                <strong> Periguete, uma alegria cheia de energia</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p> A Periguete é uma cadelinha amorosa e muito alegre. Adora brincar e dá-se bem com outros cães.
+            Com pessoas inicialmente pode parecer mais desinteressada, mas rapidamente vai ganhando
+            confiança. </p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Feminino (esterilizada)</p>
+
+              <h3>Porte</h3>
+              <p> Médio</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>2 anos e 10 meses
+              </p>
+
+              <h3>Raça</h3>
+              <p> Rafeira (indefinida)
+              </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ======================= Desktop Cat  Section close   ====================================  -->
+
+  <!-- ======================= Mob Cat  Section Open   ====================================  -->
+  <div class="pet-row pet__catdog__mob">
+    <div class="pet__dogcat__nav">
+      <ul>
+        <li class="active"><a href="#" data-tab__class=".pet__cat">Gatos</a></li>
+        <li><a href="#" data-tab__class=".pet__dog"> Cães</a></li>
+      </ul>
+    </div>
+
+
+    <div class="pet-row pet__cat active">
+
+      <div class="pet__row__inner">
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/3fd1c71435d214a5cac611aa245eaf3bc8311238" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
               <h3>Rosa Real</h3>
             </div>
             <div class="pet__item-overlay">
@@ -809,7 +1591,8 @@
                 <strong> Meiguice em modo full-on</strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
             </div>
           </div>
 
@@ -831,42 +1614,44 @@
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>9 anos e 4 meses
+              </p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
+
 
         <div data-pr="pr__2" class="pet__row__item ">
           <div class="pet_ola_rel">
-            <img src="images/gatos/rosa-real.jpg" class="pet-img" alt="">
-            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img src="images/close.png" alt=""> </a>
+            <img src="https://www.worten.pt/i/ecce26aea34524c65ba391d82410e1b5455c8c3c" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
             <div class="pet__row__item-display">
-              <img src="images/gatos/icon.png" alt="">
-              <h3>Rosa Real</h3>
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Folha</h3>
             </div>
             <div class="pet__item-overlay">
-              <h2>Rosa Real</h2>
+              <h2>Folha</h2>
               <p>
-                <strong> Meiguice em modo full-on</strong> <br>
+                <strong> Folha, uma manta de pelo adorável </strong> <br>
                 Aquece a casa e o coração
               </p>
-              <a href="#" data-pr="pr__1"> <img src="images/arrow.png" alt=""> </a>
+              <a href="#form" data-pr="pr__1"> <img
+                  src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5" alt=""> </a>
             </div>
           </div>
-
         </div>
         <div class="pet__row__item__info pr__2">
-          <p>A Rosa Real é uma gatinha extremamente meiga. Adora atenção e todo o carinho que lhe possamos
-            dar. É muito conversadora e anda sempre atrás de nós a pedir atenção. É uma gatinha ciumenta,
-            pelo que não gosta muito de outros gatos. Procura uma família que a estime no resto da sua longa
-            vida e que não se importe que ela seja FIV positiva.</p>
+          <p>A Folha é uma gatinha maravilhosa. Adora muitos mimos, festas e toda a atenção do mundo. É uma
+            gatinha bastante ciumenta com os outros gatos, por querer a atenção toda apenas para si. A Folha
+            procura agora uma família que a estime no resto da sua longa vida.</p>
 
           <div class="pet__short__des">
             <div class="pet__left-info">
@@ -874,18 +1659,798 @@
               <p>Feminino (esterilizada)</p>
 
               <h3>Tempo em</h3>
-              <p> 3 meses</p>
+              <p></p>
             </div>
             <div class="pet__mid-info">
               <h3>Idade</h3>
-              <p>Feminino (esterilizada)</p>
+              <p>5 anos e 4 meses </p>
 
               <h3>Raça</h3>
               <p> Europeu Comum (indefinida)</p>
 
             </div>
             <div class="pet__right-info">
-              <a href="#"> Quero adotar! </a>
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="pet__row__inner">
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/d77f1723bc0e2ecb5fe536aaaa4eba4fefde89bf" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Maria Costureira</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Maria Costureira</h2>
+              <p>
+                <strong> Maria Costureira, toda ela personalidade</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p>A Maria Costureira é uma gata cheia de personalidade. Não é facilmente conquistada, pois gosta
+            muito do seu sossego e que respeitem o seu espaço. Precisa de tempo, carinho e muita dedicação
+            para ganhar mais confiança nas pessoas e vir a perceber que a nossa atenção e mimos são algo
+            positivo. Deverá ser adotada por alguém que não tenha outros gatos ou cães.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Feminino (esterilizada)</p>
+
+              <h3>Tempo em</h3>
+              <p></p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>7 anos e 5 meses</p>
+
+              <h3>Raça</h3>
+              <p> Europeu Comum (indefinida)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/cdfc5d057ba2ad847bb3bbf36f52fb5b789ecfef" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Carlota</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Carlota</h2>
+              <p>
+                <strong>Carlota, a energia não se esgota</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p> A Carlota é uma gatinha jovem e com muita energia. É extremamente brincalhona e curiosa. Gosta
+            da nossa atenção e de mimos, mas tem uma personalidade forte. Não gosta de outros gatos. A
+            Carlota procura agora uma família que a estime no resto da sua longa vida.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Feminino (esterilizada)</p>
+
+              <h3>Tempo em</h3>
+              <p></p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>3 anos e 3 meses </p>
+
+              <h3>Raça</h3>
+              <p> Europeu Comum (indefinida)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pet__row__inner">
+
+
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/9928bcb7992b3c82c2326fc084dcd5ce372b0748" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Teotónio</h3>
+
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Teotónio</h2>
+              <p>
+                <strong> Teotónio, um aquecedor em miniatura </strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p> O Teotónio é um bebé receoso, mas muito doce e brincalhão. Com tempo, paciência e muito carinho,
+            ganhará confiança rapidamente. Dá-se muito bem com outros gatos. O Teotónio procura agora uma
+            família que o conquiste e estime no resto da sua longa vida.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Masculino</p>
+
+              <h3>Tempo em</h3>
+              <p></p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p> 6 meses</p>
+
+              <h3>Raça</h3>
+              <p> Europeu Comum (indefinida)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/61130223a85ad9d4759b43510272334751edf251" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Chico de Belém</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Chico de Belém</h2>
+              <p>
+                <strong> Chico de Belém, um tímido muito quentinho</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p> O Chico de Belém é um gatinho tímido, mas doce. Gosta de mimos e ganha rapidamente confiança nas
+            pessoas. Dá-se bem com outros gatos. O Chico de Belém procura agora uma família que o estime no
+            resto da sua longa vida.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p> Masculino (castrado) </p>
+
+              <h3>Tempo em</h3>
+              <p></p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>7 anos e 9 meses </p>
+
+              <h3>Raça</h3>
+              <p>Europeu Comum (indefinida)
+              </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pet__row__inner">
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/e95c6255821ba8425aab6498ff6781672479129f" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Bob Esponja </h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Bob Esponja</h2>
+              <p>
+                <strong>o distribuidor de turrinhas</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p>O Bob Esponja é um gatinho absolutamente maravilhoso. Adora atenção, companhia e todos os mimos
+            que lhe possamos dar. Para chamar a nossa atenção, gosta de nos dar turrinhas nas pernas e fica
+            à espera de festinhas. Dá-se bem com outros gatos e procura agora uma família que o estime no
+            resto da sua longa vida e que não se importe que ele seja FIV positivo. </p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p> Masculino (castrado) </p>
+
+              <h3>Tempo em</h3>
+              <p></p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p> 8 anos e 10 meses</p>
+
+              <h3>Raça</h3>
+              <p> Europeu Comum (indefinida)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/22f1737f0f260dac4a0a85671c50276211a7d12f" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3> Kilimanjaro e Top Choc</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2> Kilimanjaro e Top Choc</h2>
+              <p>
+                <strong>Kilimanjaro e Top Choc, o dobro do calor</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p>O Killimanjaro e o Top Choc são dois gatinhos fantásticos. Adoram a nossa atenção, companhia e
+            muitos, muitos mimos! São gatinhos muito calmos e tranquilos com toda a gente. Dão-se muito bem
+            com outros gatos, mas especialmente um com o outro, pois são melhores amigos inseparáveis. O
+            Killimanjaro e o Top Choc procuram agora uma família que os estime no resto das suas longas
+            vidas.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p> Masculino (castrado) </p>
+
+              <h3>Tempo em</h3>
+              <p></p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>6 anos e 10 meses </p>
+
+              <h3>Raça</h3>
+              <p> Europeu Comum (indefinida)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pet__row__inner">
+
+        <div data-pr="pr__3" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/d089b1bfdff7cf469625143626ab28e895630d2a" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Hulk</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Hulk</h2>
+              <p>
+                <strong> Hulk, o anfitrião das festas</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__3">
+          <p>O Hulk é um gatinho espetacular. Adora a nossa atenção e só quer festas e mimo a toda a hora! É
+            um gatinho super calmo e doce, mas também adora brincar. Dá-se bem com outros gatos. O Hulk
+            procura agora uma família que o estime no resto da sua longa vida e que não se importe que ele
+            seja FIV e FeLV positivo.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Masculino (castrado)</p>
+
+              <h3>Tempo em</h3>
+              <p> 3 meses</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>11 anos e 3 meses </p>
+
+              <h3>Raça</h3>
+              <p> Europeu Comum (indefinida)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="pet-row pet__dog">
+      <div class="pet__row__inner">
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/9eca506f16a0c30984f5b6345dd41d23a7433a7b" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Colibri</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Colibri</h2>
+              <p>
+                <strong> o mestre dos miminhos</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p>O Colibri é um pequenote super alegre e completamente amoroso. Mal conhece e já está com as
+            patinhas apoiadas nas nossas pernas a pedir carinho. Mais que tudo, ele quer é receber mimo! Nos
+            intervalos, também gosta de brincar com os outros cães e de farejar todos os novos cheiros que
+            encontra.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p> Masculino (castrado) </p>
+
+              <h3>Porte</h3>
+              <p> Pequeno </p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>4 anos e 5 meses </p>
+
+              <h3>Raça</h3>
+              <p> Podengo Pequeno Português (arraçado)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/c0f9b0bf7c6f9318b21342dc7e8ae0e44a6d0fad" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Indira</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Indira</h2>
+              <p>
+                <strong> um doce com muito calor para dar</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p>Esta beleza é a Indira. É uma paz de alma e de alguma forma transmite essa paz. Pode ser de porte
+            grande, mas é suave e delicada, e é doce. Cadela muito meiga, tranquila e discreta, que se dá
+            bem com toda a gente. A Indira espera muito por uma casa.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Feminino (esterilizada)</p>
+
+              <h3>Porte</h3>
+              <p> Grande</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p> 8 anos e 9 meses</p>
+
+              <h3>Raça</h3>
+              <p> Rafeira (indefinida) </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="pet__row__inner">
+
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/3a83364bf494ce8740d6abe0b130551feab16d5c" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Plus</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Plus</h2>
+              <p>
+                <strong> um pequenote com pilhas duracell</strong> <br>
+                Aquece a casa e o coração
+
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p>O Plus é um pequenote super enérgico que adora estar ocupado e entretido com tudo o que o rodeia.
+            É muito sociável e meigo, salta logo para o colo na primeira oportunidade e adora mimo. Dá-se
+            bem com outros cães, mas é muito intenso em todas as suas interações. Precisa de uma casa que
+            lhe traga o equilíbrio de que precisa para relaxar.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p> Masculino (castrado)</p>
+
+              <h3>Porte</h3>
+              <p> Pequeno</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>1 ano e 10 meses </p>
+
+              <h3>Raça</h3>
+              <p> Rafeiro (indefinida)</p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/d74cee002c843523c24f31f93f38dcfe0f7e0247" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Damas Boy</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Damas Boy</h2>
+              <p>
+                <strong> o bebezola que derrete corações
+                </strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p>O Damas Boy é um bebezola querido, alegre e meigo, muito sociável com todas as pessoas. Procura
+            uma família que o queira do seu lado por toda a sua vida e que o trate sempre com o respeito,
+            cuidados e carinho que merece.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Masculino (castrado)
+              </p>
+
+              <h3>Porte</h3>
+              <p> Médio</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>11 meses
+              </p>
+
+              <h3>Raça</h3>
+              <p> Pit Bull Terrier Americano (arraçado)
+              </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pet__row__inner">
+
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/a4fff8c0e19d0dd80c78564a7e6ef408f59aaf59" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Ben Hur</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Ben Hur</h2>
+              <p>
+                <strong> Ben Hur, um grandalhão que irradia amor</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p>O Ben Hur é um grandalhão que chegou debilitado, fragilizado e muito apático. A sua transformação
+            tem sido muito boa de se ver. O Ben agora adora estar acompanhado, sendo ele um companheirão
+            também. É meigo, calmo, muito dócil e pacato. </p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Masculino (castrado) </p>
+
+              <h3>Porte</h3>
+              <p> Grande</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>7 anos e 10 meses</p>
+
+              <h3>Raça</h3>
+              <p> Rafeiro (indefinida) </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/3336580ad2fd6a054b81454c420e68b2af18cd52" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Chulupi</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Chulupi</h2>
+              <p>
+                <strong> o nosso especialista em preguiça</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p>O Chulupi é um cão querido, bem-disposto, muito expressivo e brincalhão. Pode parecer
+            inicialmente desinteressado, mas logo se mostra muito curioso e comunicativo. Adora o conforto
+            da sua caminha e é preguiçoso para se levantar, mas em troca de umas festas fica logo convencido
+            a levantar-se.</p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Masculino (castrado)
+              </p>
+
+              <h3>Porte</h3>
+              <p> Médio</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>7 anos e 10 meses</p>
+
+              <h3>Raça</h3>
+              <p>Rafeiro (indefinida)
+              </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pet__row__inner">
+        <div data-pr="pr__1" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/4b0a2c6f340fb5cb6c2e5ad81743498ed31b2975" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Chica Bella</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Chica Bella</h2>
+              <p>
+                <strong> Chica Bella, ternura na potência máxima</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="pet__row__item__info pr__1">
+          <p> A Chica Bella inicialmente mostra-se reservada e medrosa, mas ao ganhar confiança transforma-se
+            na maior ternurinha. É muito doce e carinhosa. Uma das patinhas teve de ser amputada, pois foi
+            resgatada com um tumor nessa pata. A Chica recuperou, está de boa saúde e completamente adaptada
+            à sua nova condição. </p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Feminino (esterilizada)
+              </p>
+
+              <h3>Porte</h3>
+              <p> Médio
+              </p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>9 anos e 10 meses
+              </p>
+
+              <h3>Raça</h3>
+              <p> Rafeira (indefinida)
+              </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-pr="pr__2" class="pet__row__item ">
+          <div class="pet_ola_rel">
+            <img src="https://www.worten.pt/i/bbeae84ee33f9cc1099931d66b2afa3c95d561ee" class="pet-img" alt="">
+            <a href="#" class="pet__close-btn" data-pr="pr__1"> <img
+                src="https://www.worten.pt/i/9f00e7a18ae0a2ed6e8558a02f641cda8a2f5982" alt=""> </a>
+            <div class="pet__row__item-display">
+              <img src="https://www.worten.pt/i/515d97430b6bc36fdd8eedb809333c8540fd3324" alt="">
+              <h3>Periguete</h3>
+            </div>
+            <div class="pet__item-overlay">
+              <h2>Periguete</h2>
+              <p>
+                <strong> Periguete, uma alegria cheia de energia</strong> <br>
+                Aquece a casa e o coração
+              </p>
+              <a href="#" data-pr="pr__1"> <img src="https://www.worten.pt/i/ea4f4351e1cde82ed5a15795e867257f2952fed5"
+                                                alt=""> </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="pet__row__item__info pr__2">
+          <p> A Periguete é uma cadelinha amorosa e muito alegre. Adora brincar e dá-se bem com outros cães.
+            Com pessoas inicialmente pode parecer mais desinteressada, mas rapidamente vai ganhando
+            confiança. </p>
+
+          <div class="pet__short__des">
+            <div class="pet__left-info">
+              <h3>Género</h3>
+              <p>Feminino (esterilizada)</p>
+
+              <h3>Porte</h3>
+              <p> Médio</p>
+            </div>
+            <div class="pet__mid-info">
+              <h3>Idade</h3>
+              <p>2 anos e 10 meses
+              </p>
+
+              <h3>Raça</h3>
+              <p> Rafeira (indefinida)
+              </p>
+
+            </div>
+            <div class="pet__right-info">
+              <a href="#form"> Quero adotar! </a>
             </div>
           </div>
         </div>
@@ -895,20 +2460,16 @@
 
     </div>
   </div>
+  <!-- ======================= Mob Cat  Section close   ====================================  -->
 </div>
 <!-- ======================= CAt DOg Tab Section Close   ====================================  -->
 
-<!-- =================================
-============ This Is for DESKTOP CLOSE  ========================
-=========================================== -->
 
 
 <!-- ======================= Footer  Section Open   ====================================  -->
 <style>
-
-
     .pet-footer {
-        margin-top: 100px;
+        margin-top: 46px;
         display: flex;
 
 
@@ -958,7 +2519,7 @@
     }
 
     .pet-footer .pet-footer__line {
-        background-image: url("images/heater-line.png");
+        background-image: url("https://www.worten.pt/i/c46ec03a361372519c825cd12dcbf6e15e725892");
         height: 100px;
         position: absolute;
         bottom: 22%;
@@ -994,7 +2555,7 @@
     }
 
     .pet-footer .pet-footer-pet .pet-pets {
-        max-width: 400px;
+        max-width: 345px;
         z-index: 10;
         position: relative;
 
@@ -1020,7 +2581,7 @@
 
 
     .pet-footer .pet-footer__line-pet {
-        background-image: url("images/pet-btm-line.png");
+        background-image: url("https://www.worten.pt/i/3ead1caded85abb1d3facaacc149eea67e0c64ab");
         height: 100px;
         position: absolute;
         bottom: 22%;
@@ -1044,12 +2605,12 @@
     }
 
 
-    .footer__bar {
+    .pet-footer__bar {
         background-color: #313133;
         text-align: center;
     }
 
-    .footer__bar p {
+    .pet-footer__bar p {
         color: #F05C1B;
         font-family: 'Apercu Pro';
         font-size: 20px;
@@ -1063,11 +2624,11 @@
             flex-wrap: wrap;
         }
 
-        .pet-footer .pet-footer__right, .pet-footer .pet-footer__left {
+        .pet-footer .pet-footer__right,
+        .pet-footer .pet-footer__left {
             flex: 0 0 100%;
         }
     }
-
 
 </style>
 <section class="pet-footer">
@@ -1077,10 +2638,11 @@
         vendido, a Worten doa 1€ à União Zoófila*
       </h2>
       <p>*Em produtos novos no valor máximo de 2.000€. Até 31 de Dezembro.</p>
-      <a href="#">VER ARTIGOS</a>
+      <a href="https://www.worten.pt/campanha/folheto-aquecimento">VER ARTIGOS</a>
       <div class="pet-footer-heater">
-        <img src="images/heater.png" class="pet-img pet-heater" alt="">
-        <img src="images/heater-btm-img.png" class="pet-img pet-heater-btm" alt="">
+        <img src="https://www.worten.pt/i/17dc114243835fc7c778b19c6456ce17d992de5a" class="pet-img pet-heater" alt="">
+        <img src="https://www.worten.pt/i/3333ca66b626950c238a36694252acf83cdfc4da" class="pet-img pet-heater-btm"
+             alt="">
       </div>
     </div>
     <div class="pet-footer__line"></div>
@@ -1093,17 +2655,17 @@
         do teu novo companheiro
       </h2>
 
-      <a href="#">VER ARTIGOS</a>
+      <a href="https://www.worten.pt/animais-de-estimacao">VER ARTIGOS</a>
       <div class="pet-footer-pet">
-        <img src="images/pet-part.png" class="pet-img pet-pets" alt="">
-        <img src="images/footer-pet-btm.png" class="pet-img pet-btm-img" alt="">
+        <img src="https://www.worten.pt/i/83cd6371ff3e31854610e4671e0f99fdd157b896" class="pet-img pet-pets" alt="">
+        <img src="https://www.worten.pt/i/9b779bf63e68eb9e140cf24609686ed08ffd4734" class="pet-img pet-btm-img" alt="">
       </div>
     </div>
     <div class="pet-footer__line-pet"></div>
   </div>
 </section>
 
-<section class="footer__bar">
+<section class="pet-footer__bar">
   <p>Adotar um animal é um ato de grande responsabilidade, um compromisso que dura toda a vida.</p>
 </section>
 <!-- ======================= Footer  Section Close   ====================================  -->
@@ -1111,7 +2673,166 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script>
+  $(document).ready(function () {
+
+    $('.pet__row__item').click(function (e) {
+      e.preventDefault();
+      var windowsize = $(window).width();
+      var pr__class = $(this).data('pr');
+      var parent_class = $(this).closest('.pet__row__inner');
+      if ($(this).hasClass('active')) {
+
+        parent_class.find('.pet__row__item').removeClass('active');
+        if (windowsize > 600) {
+          pet__animation(parent_class, pr__class, "0", "0", false);
+        } else {
+          parent_class.find('.' + pr__class).slideUp('slow')
+            .animate({
+              opacity: 1
+            }, {
+              queue: false,
+              duration: 'slow'
+            });
+        }
+        if (windowsize < 600) {
+          if(pr__class == "pr__1"){
+            parent_class.find('[data-pr="pr__2"]').removeClass("deactivate").fadeIn();
+          }else{
+            parent_class.find('[data-pr="pr__1"]').removeClass("deactivate").fadeIn();
+          }
+        }else{
+          var image__height = $(this).find('.pet-img').height();
+          $(this).height(image__height);
+        }
+
+      } else {
+        $(this).addClass('active');
+
+        if (windowsize < 600) {
+          if(pr__class == "pr__1"){
+            parent_class.find('[data-pr="pr__2"]').addClass("deactivate").fadeOut();
+          }else{
+            parent_class.find('[data-pr="pr__1"]').addClass("deactivate").fadeOut();
+          }
+
+        }else{
+
+          var info__height = parent_class.find('.' + pr__class).height();
+          $(this).height(info__height);
+        }
+
+
+
+        $(this).removeClass('deactivate');
+        $('.pet__row__item__info').removeClass('active');
+
+        if (windowsize > 1131) {
+          pet__animation(parent_class, pr__class, "-400px", "-800px", true);
+        } else if (windowsize < 1131 && windowsize > 1072) {
+          pet__animation(parent_class, pr__class, "-367px", "-743px", true);
+        } else if (windowsize < 1072 && windowsize > 991) {
+          pet__animation(parent_class, pr__class, "-333px", "-682px", true);
+        } else if (windowsize < 991 && windowsize > 888) {
+          pet__animation(parent_class, pr__class, "-313px", "-645px", true);
+        } else if (windowsize < 888 && windowsize > 808) {
+          pet__animation(parent_class, pr__class, "-288px", "-593px", true);
+        } else if (windowsize < 808 && windowsize > 750) {
+          pet__animation(parent_class, pr__class, "-260px", "-544px", true);
+        } else if (windowsize < 750 && windowsize > 706) {
+          pet__animation(parent_class, pr__class, "-250px", "-507px", true);
+        } else if (windowsize < 706 && windowsize > 648) {
+          pet__animation(parent_class, pr__class, "-240px", "-470px", true);
+        } else if (windowsize < 648 && windowsize > 600) {
+          pet__animation(parent_class, pr__class, "-230px", "-419px", true);
+        } else {
+
+
+          parent_class.find('.' + pr__class).slideDown('slow')
+            .animate({
+              opacity: 1
+            }, {
+              queue: false,
+              duration: 'slow'
+            });
+        }
+
+      }
+
+    });
+
+    function pet__animation(parent_class, pr__class, second_px, third_px, fadeIn) {
+
+      if (fadeIn) {
+        parent_class.find('.' + pr__class).fadeIn(600).css({
+          "z-index": "4"
+        });
+      } else {
+        parent_class.find('.' + pr__class).fadeOut(1000).css({
+          "z-index": "0"
+        });
+      }
+      if (pr__class == "pr__1") {
+        parent_class.find('[data-pr="pr__2"]').css({
+          "z-index": "1",
+          "transform": "translate(" + second_px + ",0)"
+
+        });
+        parent_class.find('[data-pr="pr__3"]').css({
+          "z-index": "2",
+          "transform": "translate(" + third_px + ",0)"
+
+        });
+        parent_class.find('[data-pr="pr__1"]').css({
+          "z-index": "3"
+        });
+
+      } else if (pr__class == "pr__2") {
+        parent_class.find('[data-pr="pr__1"]').css({
+          "z-index": "1"
+        });
+        parent_class.find('[data-pr="pr__3"]').css({
+          "z-index": "2",
+          "transform": "translate(" + third_px + ",0)",
+
+        });
+        parent_class.find('[data-pr="pr__2"]').css({
+          "z-index": "3",
+          "transform": "translate(" + second_px + ",0)",
+
+        });
+      } else if (pr__class == "pr__3") {
+        parent_class.find('[data-pr="pr__1"]').css({
+          "z-index": "1"
+        });
+        parent_class.find('[data-pr="pr__2"]').css({
+          "z-index": "2",
+          "transform": "translate(" + second_px + ",0)",
+
+        });
+        parent_class.find('[data-pr="pr__3"]').css({
+          "z-index": "3",
+          "transform": "translate(" + third_px + ",0)"
+
+        });
+      }
+    }
+
+
+    $('.pet__dogcat__nav ul li a').click(function (e) {
+      e.preventDefault();
+      $(this).closest('ul').find('li').removeClass('active');
+      $(this).closest('li').addClass('active');
+      var tab__class = $(this).data('tab__class');
+      $('.pet__cat').removeClass('active');
+      $('.pet__dog').removeClass('active');
+
+      $(tab__class).addClass('active');
+    });
+
+  });
+</script>
+
 
 </body>
 </html>
